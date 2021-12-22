@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Templates In Vue Js</title>
+    <script src="../vue.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <!-- <div v-html = "htmlContent"></div>
+        <span v-html = "boldText"></span>
+        <div v-html = "button"></div>
+        <div v-html = "image"></div> -->
+
+
+        <!-- use of v-bind -->
+        <img v-bind:src= "imgsrc" alt="">
+        <h1 v-bind:style = "textColor">Nahid Hasan Limon</h1>
+        <button v-bind:title = "title" v-html = "text"></button>
+    </div>
+
+
+    <script src="./index.js"></script>
+</body>
+</html>
