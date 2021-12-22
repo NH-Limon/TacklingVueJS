@@ -4,24 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Templates In Vue Js</title>
+    <title>VUE JS</title>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script> -->
     <script src="../vue.min.js"></script>
 </head>
 <body>
-    <div id="app">
-        <!-- <div v-html = "htmlContent"></div>
-        <span v-html = "boldText"></span>
-        <div v-html = "button"></div>
-        <div v-html = "image"></div> -->
+    <!-- <div id="app">  
+    {{ message }}  <br>
+    {{ name }}  
+  </div>   -->
+
+  <!-- <div id="app2">  
+    <span v-bind:title="message">Hover on me to see special things</span>
+  </div>   -->
+
+  <div id="app">
+    <!-- <h1>{{name}}</h1>
+    <h2>{{age}}</h2>
+    <h3>{{address}}</h3> -->
+
+    <!-- <h2 v-bind:title = "address">{{name}}</h2> -->
+
+    
+    <!-- Condtions In Vue -->
+    <!-- <h1 v-if = "seen">This is seen by you.</h1>
+    <h1 v- else-if = "seen">I am learning Vue JS</h1>
+    <h2>{{name}}</h2> -->
 
 
-        <!-- use of v-bind -->
-        <img v-bind:src= "imgsrc" alt="">
-        <h1 v-bind:style = "textColor">Nahid Hasan Limon</h1>
-        <button v-bind:title = "title" v-html = "text"></button>
-    </div>
+    <!-- Looping In Vue -->
+    <h3 v-for = "it of things">{{it.item}}</h3>
+  </div>
 
-
-    <script src="./index.js"></script>
+  <script>  
+    // var app = new Vue({  
+    //   el: '#app',  
+    //   data: {  
+    //     message: 'This is a message for you',
+    //     name : "Nahid Hasan Limon" 
+    //   }  
+    // });
+    
+    // var app2 = new Vue({
+    //   el : '#app2',
+    //   data : {
+    //     message  : "You have lastly refreshed the page on: " + new Date().toLocaleString()
+    //   }
+    //  });
+  </script>
+  
+  
+  <!-- <script src="index.js"></script> -->
+  <script src="index2.js"></script>
 </body>
 </html>
